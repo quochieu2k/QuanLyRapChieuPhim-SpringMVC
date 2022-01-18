@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+       
+<tiles-definitions>  
+
+    <!-- Admin Define -->
+    <definition name="admin.definition" template="/WEB-INF/admin/layouts/template.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="body" value="" />  
+    </definition>  
+    
+    <!-- User Define -->
+    <definition name="user.definition" template="/WEB-INF/user/layouts/template.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="body" value="" />  
+    </definition>  
+    
+	<!-- ADMIN -->
+
+	    <!-- Home Page Admin -->
+	    <definition name="adminHome" extends="admin.definition">  
+	        <put-attribute name="title" value="Home Page Admin" />  
+	        <put-attribute name="body" value="/WEB-INF/admin/views/home.jsp" />  
+	    </definition>  
+	    
+	    
+	 	<!-- Cum Rap Index (Admin) -->
+	    <definition name="cumrapIndex" extends="admin.definition">  
+	        <put-attribute name="title" value="Cụm Rạp" />  
+	        <put-attribute name="body" value="/WEB-INF/admin/views/cumrapIndex.jsp" />  
+	    </definition>  
+	    
+	    <!-- Cum Rap Create (Admin) -->
+	    <definition name="cumrapCreate" extends="admin.definition">  
+	        <put-attribute name="title" value="Thêm Cụm Rạp" />  
+	        <put-attribute name="body" value="/WEB-INF/admin/views/cumrapCreate.jsp" />  
+	    </definition>  
+	    
+	    <!-- Cum Rap Edit (Admin) -->
+	    <definition name="cumrapEdit" extends="admin.definition">  
+	        <put-attribute name="title" value="Sửa Thông Tin Cụm Rạp" />  
+	        <put-attribute name="body" value="/WEB-INF/admin/views/cumrapEdit.jsp" />  
+	    </definition>  
+	    
+	    <!-- Rap Index (Admin) -->
+	    <definition name="rapIndex" extends="admin.definition">  
+	        <put-attribute name="title" value="Rạp" />  
+	        <put-attribute name="body" value="/WEB-INF/admin/views/rapIndex.jsp" />  
+	    </definition>  
+	    
+	    <!-- Rap Create (Admin) -->
+	    <definition name="rapCreate" extends="admin.definition">  
+	        <put-attribute name="title" value="Thêm Rạp" />  
+	        <put-attribute name="body" value="/WEB-INF/admin/views/rapCreate.jsp" />  
+	    </definition>  
+	    
+	    <!-- Rap Edit (Admin) -->
+	    <definition name="rapEdit" extends="admin.definition">  
+	        <put-attribute name="title" value="Sửa Thông Tin Rạp" />  
+	        <put-attribute name="body" value="/WEB-INF/admin/views/rapEdit.jsp" />  
+	    </definition> 
+	    
+	    <!-- Phim Index (Admin) -->
+	    <definition name="phimIndex" extends="admin.definition">  
+	        <put-attribute name="title" value="Phim" />  
+	        <put-attribute name="body" value="/WEB-INF/admin/views/phimIndex.jsp" />  
+	    </definition>  
+	    
+	    <!-- Phim Create (Admin) -->
+	    <definition name="phimCreate" extends="admin.definition">  
+	        <put-attribute name="title" value="Thêm Phim Mới" />  
+	        <put-attribute name="body" value="/WEB-INF/admin/views/phimCreate.jsp" />  
+	    </definition>  
+	    
+	    <!-- Phim Edit (Admin) -->
+	    <definition name="phimEdit" extends="admin.definition">  
+	        <put-attribute name="title" value="Sửa Thông Tin Phim" />  
+	        <put-attribute name="body" value="/WEB-INF/admin/views/phimEdit.jsp" />  
+	    </definition> 
+	    
+	    <!-- Suat Chieu Index (Admin) -->
+	    <definition name="suatchieuIndex" extends="admin.definition">  
+	        <put-attribute name="title" value="Suất Chiếu" />  
+	        <put-attribute name="body" value="/WEB-INF/admin/views/suatchieuIndex.jsp" />  
+	    </definition>  
+	    
+	    <!-- Suat Chieu Create (Admin) -->
+	    <definition name="suatchieuCreate" extends="admin.definition">  
+	        <put-attribute name="title" value="Thêm Suất Chiếu" />  
+	        <put-attribute name="body" value="/WEB-INF/admin/views/suatchieuCreate.jsp" />  
+	    </definition>  
+	    
+	    <!-- Suat Chieu Edit (Admin) -->
+	    <definition name="suatchieuEdit" extends="admin.definition">  
+	        <put-attribute name="title" value="Sửa Thông Tin Suất Chiếu" />  
+	        <put-attribute name="body" value="/WEB-INF/admin/views/suatchieuEdit.jsp" />  
+	    </definition> 
+	    
+	    <!-- Banner Index (Admin) -->
+	    <definition name="bannerIndex" extends="admin.definition">  
+	        <put-attribute name="title" value="Quảng Cáo" />  
+	        <put-attribute name="body" value="/WEB-INF/admin/views/bannerIndex.jsp" />  
+	    </definition>  
+	    
+	    <!-- Banner Create (Admin) -->
+	    <definition name="bannerCreate" extends="admin.definition">  
+	        <put-attribute name="title" value="Thêm Quảng Cáo" />  
+	        <put-attribute name="body" value="/WEB-INF/admin/views/bannerCreate.jsp" />  
+	    </definition>  
+	    
+	    <!-- Banner Edit (Admin) -->
+	    <definition name="bannerEdit" extends="admin.definition">  
+	        <put-attribute name="title" value="Sửa Quảng Cáo" />  
+	        <put-attribute name="body" value="/WEB-INF/admin/views/bannerEdit.jsp" />  
+	    </definition> 
+	    
+	    <!-- Food Index (Admin) -->
+	    <definition name="foodIndex" extends="admin.definition">  
+	        <put-attribute name="title" value="Đồ Ăn" />  
+	        <put-attribute name="body" value="/WEB-INF/admin/views/foodIndex.jsp" />  
+	    </definition>  
+	    
+	    <!-- Food Create (Admin) -->
+	    <definition name="foodCreate" extends="admin.definition">  
+	        <put-attribute name="title" value="Thêm Đồ Ăn" />  
+	        <put-attribute name="body" value="/WEB-INF/admin/views/foodCreate.jsp" />  
+	    </definition>  
+	    
+	    <!-- Food Edit (Admin) -->
+	    <definition name="foodEdit" extends="admin.definition">  
+	        <put-attribute name="title" value="Sửa Đồ Ăn" />  
+	        <put-attribute name="body" value="/WEB-INF/admin/views/foodEdit.jsp" />  
+	    </definition> 
+	    
+	    <!-- Nguoi dung Index (Admin) -->
+	    <definition name="nguoidungIndex" extends="admin.definition">  
+	        <put-attribute name="title" value="Người Dùng" />  
+	        <put-attribute name="body" value="/WEB-INF/admin/views/nguoidungIndex.jsp" />  
+	    </definition>  
+	    
+	    <!-- Nguoi dung Create (Admin) -->
+	    <definition name="nguoidungCreate" extends="admin.definition">  
+	        <put-attribute name="title" value="Thêm Người Dùng" />  
+	        <put-attribute name="body" value="/WEB-INF/admin/views/nguoidungCreate.jsp" />  
+	    </definition>  
+	    
+	    <!-- Nguoi dung Edit (Admin) -->
+	    <definition name="nguoidungEdit" extends="admin.definition">  
+	        <put-attribute name="title" value="Sửa Người Dùng" />  
+	        <put-attribute name="body" value="/WEB-INF/admin/views/nguoidungEdit.jsp" />  
+	    </definition> 
+	    
+	    <!-- Ve Index (Admin) -->
+	    <definition name="veIndex" extends="admin.definition">  
+	        <put-attribute name="title" value="Vé Đã Đặt" />  
+	        <put-attribute name="body" value="/WEB-INF/admin/views/veIndex.jsp" />  
+	    </definition>  
+	    
+	    <!-- Chi Tiet Ve (Admin) -->
+	    <definition name="veDetail" extends="admin.definition">  
+	        <put-attribute name="title" value="Chi Tiết Vé" />  
+	        <put-attribute name="body" value="/WEB-INF/admin/views/veDetail.jsp" />  
+	    </definition> 
+    
+    <!-- END ADMIN -->
+    
+    <!-- CLIENT -->
+    
+    	<!-- Home Page Client -->
+	    <definition name="index" extends="user.definition">  
+	        <put-attribute name="title" value="Rạp Phim CGV" />  
+	        <put-attribute name="body" value="/WEB-INF/user/views/index.jsp" />  
+	    </definition>  
+	    
+	    <!-- Trang Dang Nhap -->
+	    <definition name="login" extends="user.definition">  
+	        <put-attribute name="title" value="Đăng Nhập" />  
+	        <put-attribute name="body" value="/WEB-INF/user/views/login.jsp" />  
+	    </definition>  
+	    
+	    <!-- Trang Dang Ky -->
+	    <definition name="register" extends="user.definition">  
+	        <put-attribute name="title" value="Đăng Ký" />  
+	        <put-attribute name="body" value="/WEB-INF/user/views/register.jsp" />  
+	    </definition>  
+	    
+	    <!-- Trang Thanh Vien-->
+	    <definition name="member" extends="user.definition">  
+	        <put-attribute name="title" value="Tài Khoản Của Tôi" />  
+	        <put-attribute name="body" value="/WEB-INF/user/views/member.jsp" />  
+	    </definition>  
+	    
+	    <!-- Doi Mat Khau -->
+	    <definition name="changepassword" extends="user.definition">  
+	        <put-attribute name="title" value="Đổi Mật Khẩu" />  
+	        <put-attribute name="body" value="/WEB-INF/user/views/changepassword.jsp" />  
+	    </definition>  
+	    
+	    <!-- Trang Cum Rap -->
+	    <definition name="cumrap" extends="user.definition">  
+	        <put-attribute name="title" value="Cụm Rạp CGV" />  
+	        <put-attribute name="body" value="/WEB-INF/user/views/cumrap.jsp" />  
+	    </definition>  
+	    
+	    <!-- Trang Chi Tiet Cum Rap-->
+	    <definition name="chitietcumrap" extends="user.definition">  
+	        <put-attribute name="title" value="Chi Tiết Cụm Rạp" />  
+	        <put-attribute name="body" value="/WEB-INF/user/views/chitietcumrap.jsp" />  
+	    </definition>  
+	    
+	    <!-- Trang Phim -->
+	    <definition name="phim" extends="user.definition">  
+	        <put-attribute name="title" value="Phim Đang Chiếu" />  
+	        <put-attribute name="body" value="/WEB-INF/user/views/phim.jsp" />  
+	    </definition>  
+	    
+	    <!-- Trang Chi Tiet Phim -->
+	    <definition name="chitietphim" extends="user.definition">  
+	        <put-attribute name="title" value="Thông Tin Phim" />  
+	        <put-attribute name="body" value="/WEB-INF/user/views/chitietphim.jsp" />  
+	    </definition>  
+	    
+	    <!-- Trang Lich Chieu Phim -->
+	    <definition name="lichchieu" extends="user.definition">  
+	        <put-attribute name="title" value="Lịch Chiếu Phim" />  
+	        <put-attribute name="body" value="/WEB-INF/user/views/lichchieu.jsp" />  
+	    </definition>  
+	    
+	    <!-- API Xem lich chieu -->
+	    <definition name="showtime" template="/WEB-INF/user/views/showtime.jsp" />
+	    
+	    <!-- Trang Dat Ve -->
+	    <definition name="datve" extends="user.definition">  
+	        <put-attribute name="title" value="Đặt Vé" />  
+	        <put-attribute name="body" value="/WEB-INF/user/views/datve.jsp" />  
+	    </definition> 
+	    
+	    <!-- Trang Dat Combo -->
+	    <definition name="datvecombo" extends="user.definition">  
+	        <put-attribute name="title" value="Đặt Combo" />  
+	        <put-attribute name="body" value="/WEB-INF/user/views/datvecombo.jsp" />  
+	    </definition> 
+	    
+	    <!-- Dat Ve Thanh Cong -->
+	    <definition name="success" extends="user.definition">  
+	        <put-attribute name="title" value="Đặt Vé Thành Công" />  
+	        <put-attribute name="body" value="/WEB-INF/user/views/success.jsp" />  
+	    </definition> 
+ 
+ 	<!-- END CLIENT -->
+</tiles-definitions> 
